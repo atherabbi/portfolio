@@ -16,32 +16,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
-
-// onclick copy
-function copyTextToClipboard() {
-  // Select the text you want to copy
-  var textToCopy = document.getElementById("text-to-copy");
-
-  // Create a range to select the text
-  var range = document.createRange();
-  range.selectNode(textToCopy);
-
-  // Select the text
-  window.getSelection().removeAllRanges(); // Clear previous selections
-  window.getSelection().addRange(range);
-
-  // Copy the selected text to the clipboard
-  document.execCommand("copy");
-
-  // Deselect the text
-  window.getSelection().removeAllRanges();
-
-  // Show the pop-up message
-  var copyMessage = document.getElementById("copy-message");
-  copyMessage.style.display = "block";
-
-  // Hide the pop-up message after a short delay
-  setTimeout(function () {
-    copyMessage.style.display = "none";
-  }, 2000); // Change 2000 to the desired duration in milliseconds
-}
