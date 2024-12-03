@@ -2,4 +2,4 @@ This repository contains my personal portfolio website, which I use to showcase 
 
 I am always looking for new ways to improve my portfolio, so please feel free to leave feedback or suggestions in the issues section of this repository.
 
-Live Link : atherabbi.com
+Live Link : https://atherabbi.com/
